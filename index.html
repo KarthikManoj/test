@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Feedback</title>
+<style>
+
+.add-button {
+	display: inline-block;
+  padding: 15px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+	
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="Feed.css">
 </head>
-<body>
-    
-</body>
-</html>
+<body  background="fed.png">
+<script> 
+function onvalidate()
+{ 
+ var name = document.form.name.value;
+ var email = document.form.email.value; 
+ var comments = document.form.comments.value;
+ var rate = document.form.rate.value;
+ 
+ if (name==null || name=="")
+ { 
+ alert("Name can't be blank"); 
+ return false; 
+ }
+ else if (email==null || email=="")
+ { 
+ alert("Email can't be blank"); 
+ return false; 
+ }
+ else if (comments==null || comments=="")
+ {
+ alert("comments can't be blank"); 
+ return false; 
+ } 
+ else if (rate==null || rate=="")
+ {
+ alert("rate can't be blank"); 
+ return false; 
+ } 
+ } 
+</script> 
